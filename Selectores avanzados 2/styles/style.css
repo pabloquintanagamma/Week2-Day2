@@ -1,0 +1,35 @@
+/* All elements have the same font family */
+* {
+    font-family: Arial;
+}
+
+/* All spans with a "lang" attribute are bold */
+span[lang] {
+    font-weight: bold;
+}
+
+/* All spans in Portuguese are green */
+span[lang="pt"] {
+    color: #20b2aa;
+}
+
+/* All spans in Italian are blue  */
+span[lang~="it"] {
+    color: #1d7fd4;
+}
+
+/* Any span in Chinese is red, matches
+   simplified (zh-CN) or traditional (zh-TW) */
+span[lang|="zh"] {
+    color: red;
+}
+
+/* All internal links have a gold background */
+a[href^="#"] {
+    background-color: gold;
+}
+
+/* SIBLINGS */
+div+picture {
+    background-color: blue;
+}
